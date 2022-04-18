@@ -1,0 +1,19 @@
+.pagination-wrapper {
+    .page-link {
+        background-color: #fff0;
+        border: none;
+        color: $mid-grey;
+        font-weight: 600;
+    }
+    li.page-item {
+        display: flex;
+        align-items: center;
+        border: none;
+        color: $mid-grey;
+    }
+    li.page-item.active .page-link {
+        color: black;
+        background-color: transparent;
+
+    }
+}

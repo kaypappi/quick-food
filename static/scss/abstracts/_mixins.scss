@@ -1,0 +1,26 @@
+@mixin container() {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include media(576px) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include media(768px) {
+        width: 90%;
+    }
+    
+    @include media(1200px) {
+        width: 1180px;
+    }
+
+    @include media(1600px) {
+        width: 1300px;
+    }
+    
+    @include media(1800px) {
+        width: 1600px;
+    }
+}

@@ -1,0 +1,29 @@
+.pill{
+    padding: 3px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    text-align: center;
+    width: fit-content;
+    &-success{
+        background-color: #0fb5002f;
+        color: #0eb500;
+    }
+    &-info{
+        background-color: #0b86d317;
+        color: #0b86d3;
+    }
+    &-pending{
+        background-color: lighten($brand-color, 20);
+        color: darken($brand-color, 40);
+    }
+    &-danger{
+        background-color: lighten( $brand-red, 45);
+        color: darken($brand-red, 10);
+    }
+    &-transparent{
+        background: none;
+        border-width: 1px;
+        border-style: solid;
+    }
+}
+

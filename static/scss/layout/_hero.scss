@@ -1,0 +1,25 @@
+.user {
+    display: flex;
+    align-items: center;
+    &__avatar {
+        margin-right: 10px;
+        &__image {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__details {
+        margin-right: 15px;
+        &__title {
+            color: rgba(#ffffff, 0.8);
+            font-size: 12px;
+        }
+        &__caption {
+            font-size: 18px;
+            color: #ffffff;
+        }
+    }
+}

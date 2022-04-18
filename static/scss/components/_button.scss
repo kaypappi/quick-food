@@ -1,0 +1,142 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: none;
+    color: $accent-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: $font-extra-bold;
+    letter-spacing: 0.5px;
+    line-height: 14px;
+    padding: 14px 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transition-property: background-color, transform;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    @include media(768px) {
+        font-size: 12px;
+        padding: 14px 30px;
+    }
+
+    &:focus {
+        outline: none;
+        border:none;
+        box-shadow: none;
+    }
+
+    &--primary {
+        color: #000000;
+        background-color: $brand-color;
+        &:hover, &:active {
+            background-color: darken($brand-color, 10%);
+        }
+    }
+
+    &--transparent{
+        background-color: none;
+        color: $brand-color;
+        border: none;
+        &:hover, &:active {
+            background-color: darken($brand-color, 10%);
+        }
+    }
+
+    &--transparent2{
+        background-color: none;
+        color: $brand-color;
+        border: 1px solid $light-grey;
+        border-radius: 16px;
+        &:hover, &:active {
+            background-color: lighten($brand-color, 30%);
+            color: $brand-color;
+        }
+    }
+
+    &--soundcloud {
+        color: #fff;
+        background-color: #ED612B;
+        &:hover, &:active {
+            background-color: darken(#ED612B, 10%);
+        }
+    }
+
+    &--twitter {
+        background-color: #00aecc;
+        color: #fff;
+        &:hover {
+            background-color: darken(#00aecc, 5%)
+        }
+    }
+
+    &--default {
+        background-color: #e6eaee;
+        &:hover {
+            background-color: darken(#e6eaee, 14%);
+        }
+    }
+
+    &--detail {
+        background-color: #4d5778;
+        color: #fff;
+        &:hover {
+            background-color: darken(#4d5778, 14%);
+        }
+    }
+
+    &--white {
+        background-color: #fff;
+    }
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--rounded {
+        border-radius: 30px;
+    }
+
+    &--sm {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    &--lg {
+        font-size: 24px;
+        padding: 16px 32px;
+    }
+
+    &__text {
+        margin-right: 10px;
+
+        @include media(768px) {
+            margin-right: 20px;
+        }
+    }
+
+    &__icon {
+        vertical-align: middle;
+    }
+    
+    &--red {
+        background-color: #F67E7D;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

@@ -1,0 +1,67 @@
+h1 {
+    font-size: clamp(2.2em, 4vw, 3.8em);
+}
+h2 {
+    font-size: clamp(1.8em, 3vw, 2.8em);
+}
+h3 {
+    font-size: clamp(1em, 3vw, 1.6em);
+}
+h4 {
+    font-size: clamp(0.8em, 2vw, 1em);
+}
+h5 {
+    font-size: clamp(0.6em, 1vw, 0.8em);
+}
+h6 {
+    font-size: clamp(0.4em, 3vw, 0.6em);
+}
+.h7 {
+    font-size: clamp(0.3em, 3vw, 0.4em);
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
+.galano{
+    font-family: $galano;
+}
+
+.manrope{
+    font-family: $manrope;
+}
+
+.dmsans{
+    font-family: $dmsans;
+}
+
+.mid-grey{
+    color: $mid-grey;
+}
+
+.light-orange{
+    color: $orange;
+}
+
+.bg-light-orange{
+    background-color: lighten($orange, 50%);
+}
+
+//Line Height
+
+.lh-base{
+    line-height: $line-height-base;
+}
+
+.lh-sm{
+    line-height: $line-height-sm;
+}
+
+.lh-md{
+    line-height: $line-height-md;
+}
+
+.lh-lg{
+    line-height: $line-height-lg;
+}
